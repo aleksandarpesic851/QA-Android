@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    android:paddingLeft="30dp"
+    android:paddingRight="30dp"
+    android:paddingTop="40dp">
+
+    <UIControl.CustomTextViewBold
+        android:id="@+id/question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/question_first"
+        android:textColor="@color/black_87"
+        android:textSize="18sp" />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/option_11_card"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/question"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        card_view:cardCornerRadius="6dp"
+        card_view:cardElevation="5dp"
+        card_view:cardPreventCornerOverlap="false"
+        card_view:cardUseCompatPadding="true">
+
+        <RelativeLayout
+            android:id="@+id/option_11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/questionnaire_rectangle">
+
+            <UIControl.CustomTextViewRegular
+                android:id="@+id/option_11_ans"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:text="@string/option_1_1"
+                android:textColor="@color/black_87"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/option_12_card"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/option_11_card"
+        android:layout_centerHorizontal="true"
+        card_view:cardCornerRadius="6dp"
+        card_view:cardElevation="5dp"
+        card_view:cardPreventCornerOverlap="false"
+        card_view:cardUseCompatPadding="true">
+
+        <RelativeLayout
+            android:id="@+id/option_12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/questionnaire_rectangle">
+
+            <UIControl.CustomTextViewRegular
+                android:id="@+id/option_12_ans"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:text="@string/option_1_2"
+                android:textColor="@color/black_87"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/option_13_card"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/option_12_card"
+        android:layout_centerHorizontal="true"
+        card_view:cardCornerRadius="6dp"
+        card_view:cardElevation="5dp"
+        card_view:cardPreventCornerOverlap="false"
+        card_view:cardUseCompatPadding="true">
+
+        <RelativeLayout
+            android:id="@+id/option_13"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/questionnaire_rectangle">
+
+            <UIControl.CustomTextViewRegular
+                android:id="@+id/option_13_ans"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:text="@string/option_1_3"
+                android:textColor="@color/black_87"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/option_14_card"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/option_13_card"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"
+        card_view:cardCornerRadius="6dp"
+        card_view:cardElevation="3dp"
+        card_view:cardPreventCornerOverlap="false"
+        card_view:cardUseCompatPadding="true">
+
+        <RelativeLayout
+            android:id="@+id/option_14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/questionnaire_rectangle">
+
+            <EditText
+                android:id="@+id/option_14_ans"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="2dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="2dp"
+                android:gravity="center_horizontal"
+                android:hint="@string/option_other"
+                android:maxLines="2"
+                android:textColor="@color/black_87"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <Button
+        android:id="@+id/submit_btn"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/option_13_card"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"
+        android:background="@drawable/button_background_rounded_rectangle"
+        android:text="@string/submit"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white" />
+</RelativeLayout>

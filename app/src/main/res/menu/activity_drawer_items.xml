@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:id="@+id/grp1"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/Home"
+            android:icon="@drawable/icon_home_inactive"
+            android:title="Home"
+
+            />
+
+    </group>
+
+
+    <group
+        android:id="@+id/grp2"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/Profile"
+            android:icon="@drawable/icon_profile_inactive"
+            android:title="My Profile" />
+    </group>
+    <!--<group android:checkableBehavior="single" android:id="@+id/grp3" >-->
+
+    <!--<item-->
+    <!--android:id="@+id/Course"-->
+    <!--android:icon="@drawable/online_course"-->
+    <!--android:title="Course" />-->
+    <!--</group>-->
+
+    <group
+        android:id="@+id/grp4"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/Buy"
+            android:icon="@drawable/icon_buy_inactive"
+            android:title="Buy" />
+    </group>
+
+    <group
+        android:id="@+id/grp5"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/AskToExpert"
+            android:icon="@drawable/avatar"
+            android:title="Ask To Expert"
+            android:visible="false" />
+    </group>
+    <group
+        android:id="@+id/grp6"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/ReferFrd"
+            android:icon="@drawable/icon_friends_inactive"
+            android:title="Refer Friend" />
+    </group>
+    <group
+        android:id="@+id/grpRateUS"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/RateUs"
+            android:icon="@drawable/icon_rate_inactive"
+            android:title="RateUs" />
+    </group>
+    <group
+        android:id="@+id/grpHelpAndSupport"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/HelpAndSupport"
+            android:icon="@drawable/icon_help_inactive"
+            android:title="@string/menu_title_help_and_support" />
+    </group>
+    <group
+        android:id="@+id/grp7"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/Setting"
+            android:icon="@drawable/icon_settings_inactive"
+            android:title="Settings" />
+    </group>
+    <group
+        android:id="@+id/grp8"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/SignOut"
+            android:icon="@drawable/help_icon"
+            android:title="Help"
+            android:visible="false" />
+    </group>
+
+
+    <group
+        android:id="@+id/grp9"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/FreeSub"
+            android:icon="@drawable/check_mark"
+            android:title="Free Subscription"
+            android:visible="false" />
+    </group>
+</menu>

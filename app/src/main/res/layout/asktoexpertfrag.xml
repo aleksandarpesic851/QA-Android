@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <UIControl.CustomEditTextView
+            android:id="@+id/edtTitleAddCommentAskToExpertScreen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:hint="Title"
+            android:textSize="@dimen/text_size"
+            android:inputType="textCapSentences"/>
+    </android.support.design.widget.TextInputLayout>
+
+
+    <UIControl.CustomEditTextView
+        android:id="@+id/edtDescAddCommentAskToExpertScreen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/tablelayoutstyle"
+        android:gravity="top"
+        android:hint="Description"
+        android:inputType="textMultiLine"
+        android:lines="10"
+        android:scrollHorizontally="false"
+        android:scrollbars="vertical"
+        android:imeOptions="actionDone"
+        android:padding="10dp"/>
+
+    <UIControl.CustomButton
+        android:id="@+id/btnSubmitAddCommentAskToExpertScreen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/custom_button_bg"
+        android:backgroundTint="@color/colorPrimary"
+        android:text="SUBMIT"
+        android:textColor="@drawable/custom_button_text_bg" />
+
+</LinearLayout>

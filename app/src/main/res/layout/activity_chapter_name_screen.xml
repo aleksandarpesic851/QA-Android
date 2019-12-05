@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:id="@+id/lLayoutChapterVideoTabScreen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+
+        <android.support.design.widget.TabLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/chapterName_TabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@android:color/white"
+            android:elevation="5dp"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:tabGravity="fill"
+            app:tabIndicatorColor="@color/colorPrimary"
+            app:tabIndicatorHeight="4dp"
+            app:tabMaxWidth="0dp"
+            app:tabMode="fixed"
+            app:tabPaddingEnd="-1dp"
+            app:tabPaddingStart="-1dp"
+            app:tabSelectedTextColor="@color/colorPrimary"
+            app:tabTextColor="@android:color/black" />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/chapterName_ViewPager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@android:color/transparent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lLayoutSearchViewChapterVideoTabScreen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:orientation="horizontal"
+            android:background="@color/colorPrimary"
+            android:padding="10dp">
+            <android.support.v7.widget.AppCompatImageButton
+                android:id="@+id/imgBtnBackSearchViewChapterVideoTabScreen"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                app:srcCompat="?attr/homeAsUpIndicator"
+                android:background="@android:color/transparent"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="4dp"
+                android:layout_gravity="center_vertical"
+                android:scaleType="fitXY"
+                android:tint="#ffffff"/>
+            <UIControl.CustomSearchView
+                android:id="@+id/searchViewChapterVideoTabScreen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textCursorDrawable="@null">
+            </UIControl.CustomSearchView>
+        </LinearLayout>
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerViewSearchVideoListChapterVideoTabScreen"
+            android:layout_width="match_parent"
+            android:textCursorDrawable="@drawable/custom_cursor"
+            android:layout_height="wrap_content">
+
+        </android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+</RelativeLayout>

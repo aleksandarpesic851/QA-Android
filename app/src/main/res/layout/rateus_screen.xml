@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorNavigationHeader"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:visibility="gone"
+            android:src="@drawable/transparent_logo" />
+
+        <UIControl.CustomTextViewBold
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="10dp"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:text="Loving Visual Physics videos?"
+            android:textColor="@color/colorNavigationWhite"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+
+        <UIControl.CustomTextViewRegular
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="0dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:text="Please rate us in Play Store."
+            android:textColor="@color/colorNavigationWhite"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+
+
+
+
+
+
+        <android.support.v7.widget.AppCompatRatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:clickable="false"
+            android:isIndicator="true"
+            android:numStars="5"
+            android:rating="5"
+            android:theme="@style/Theme.Rating"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:orientation="horizontal">
+
+            <UIControl.CustomButton
+                android:id="@+id/btnNoRateUsScreen"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@color/colorNavigationWhite"
+                android:gravity="center"
+                android:padding="8dp"
+
+                android:text="NO" />
+
+            <UIControl.CustomButton
+                android:id="@+id/btnYesRateUsScreen"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:background="@color/colorNavigationWhite"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="YES" />
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

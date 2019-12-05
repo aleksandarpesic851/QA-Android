@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <UIControl.CustomTextViewRegular
+                android:id="@+id/lblShareApp"
+                android:text="@string/share_app"
+                style="@style/style_share_text" />
+
+            <UIControl.CustomTextViewRegular
+                style="@style/style_share_text"
+                android:id="@+id/lblShareDesc"
+                android:text="@string/share_desc"
+                android:textSize="@dimen/share_desc_size"/>
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/shareDivider"
+            android:layout_width="@dimen/img_setting"
+            android:layout_height="4dp"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/default_half_margin"
+            android:background="@color/grey" />
+
+        <LinearLayout
+            android:id="@+id/llShareAction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/ivShareFacebook"
+                style="@style/style_share_button"
+                android:src="@drawable/ic_facebook" />
+
+            <ImageButton
+                android:id="@+id/ivShareTwitter"
+                style="@style/style_share_button"
+                android:src="@drawable/twitter" />
+
+            <ImageButton
+                android:id="@+id/ivShareWhatsapp"
+                style="@style/style_share_button"
+                android:src="@drawable/whatsapp" />
+
+            <ImageButton
+                android:id="@+id/ivShare"
+                style="@style/style_share_button"
+                android:src="@drawable/share" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="60dp"
+            android:orientation="vertical">
+
+            <UIControl.CustomTextViewRegular
+                android:id="@+id/lblConnectApp"
+                android:text="@string/connect"
+                style="@style/style_share_text" />
+
+            <UIControl.CustomTextViewRegular
+                android:id="@+id/lblConnectDesc"
+                style="@style/style_share_text"
+                android:text="@string/connect_desc"
+                android:textSize="@dimen/share_desc_size" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/connectDivider"
+            android:layout_width="@dimen/img_setting"
+            android:layout_height="4dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:layout_margin="@dimen/default_half_margin"
+            android:background="@color/grey" />
+
+        <LinearLayout
+            android:id="@+id/llConnectAction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/ivConnectFacebook"
+                style="@style/style_share_button"
+                android:src="@drawable/ic_facebook" />
+
+            <ImageButton
+                android:id="@+id/ivConnectTwitter"
+                style="@style/style_share_button"
+                android:src="@drawable/twitter" />
+
+            <ImageButton
+                android:id="@+id/ivConnectYoutube"
+                style="@style/style_share_button"
+                android:src="@drawable/youtube" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

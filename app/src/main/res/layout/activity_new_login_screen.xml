@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="0dp"
+            android:layout_marginLeft="@dimen/login_margin"
+            android:layout_marginRight="@dimen/login_margin"
+            android:layout_marginTop="0dp"
+            android:orientation="vertical"
+            android:paddingBottom="20dp">
+
+            <UIControl.CustomTextViewBold
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="@string/txt_welcome"
+                android:textSize="25sp" />
+
+
+            <UIControl.CustomTextViewRegular
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="@string/txt_login_with_social"
+                android:textSize="14sp" />
+
+            <UIControl.CustomButton
+                android:id="@+id/imgBtnGooglePlusLoginScreen"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/google_plus_button_bg"
+                android:drawableLeft="@drawable/ic_glus"
+                android:drawablePadding="10dp"
+                android:gravity="center_horizontal|center_vertical"
+                android:paddingLeft="15dp"
+                android:text="Direct Login with Google"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="16sp" />
+
+            <UIControl.CustomButton
+                android:id="@+id/imgBtnFacebookLoginScreen"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/fb_button_bg"
+                android:backgroundTint="#46629e"
+                android:drawableLeft="@drawable/ic_fb"
+                android:drawablePadding="10dp"
+                android:gravity="center_horizontal|center_vertical"
+                android:paddingLeft="15dp"
+                android:text="Direct Login with Facebook"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="16sp" />
+
+            <UIControl.CustomTextViewRegular
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="@string/txt_social_login_info"
+                android:textSize="12sp" />
+
+
+            <UIControl.CustomTextViewRegular
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="80dp"
+                android:gravity="center"
+                android:visibility="gone"
+                android:text="@string/txt_already_signup"
+                android:textSize="14sp" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:orientation="vertical">
+
+                <UIControl.CustomTextViewRegular
+                    android:id="@+id/btnLogin_LoginScreen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="5dp"
+                    android:text="@string/txt_login_with_email"
+                    android:textSize="16sp" />
+
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

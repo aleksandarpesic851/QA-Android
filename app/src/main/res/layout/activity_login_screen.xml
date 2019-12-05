@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:layout_marginBottom="20dp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/login_margin"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="@dimen/login_margin"
+            android:layout_marginBottom="20dp"
+            android:paddingBottom="20dp"
+            android:orientation="vertical">
+
+            <UIControl.CustomTextViewRegular
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/txt_title_new_user"
+                android:textSize="18sp"/>
+
+            <UIControl.CustomButton
+                android:id="@+id/btnSignUpLoginScreen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/custom_button_bg"
+                android:backgroundTint="@color/colorPrimary"
+                android:text="Sign up with Email"
+
+                android:textColor="@drawable/custom_button_text_bg"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:background="@android:color/darker_gray"/>
+
+                <UIControl.CustomTextViewRegular
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+
+                    android:gravity="center"
+                    android:text="OR"/>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:background="@android:color/darker_gray"/>
+
+
+            </LinearLayout>
+
+            <UIControl.CustomButton
+                android:id="@+id/imgBtnGooglePlusLoginScreen"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/google_plus_button_bg"
+                android:drawableLeft="@drawable/ic_glus"
+                android:drawablePadding="10dp"
+                android:gravity="center_horizontal|center_vertical"
+                android:paddingLeft="15dp"
+                android:text="Direct Login with Google"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"/>
+
+            <UIControl.CustomButton
+                android:id="@+id/imgBtnFacebookLoginScreen"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/fb_button_bg"
+                android:backgroundTint="#46629e"
+                android:drawableLeft="@drawable/ic_fb"
+                android:drawablePadding="10dp"
+                android:gravity="center_horizontal|center_vertical"
+                android:paddingLeft="15dp"
+                android:text="Direct Login with Facebook"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"/>
+
+
+            <UIControl.CustomTextViewRegular
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="25dp"
+                android:text="@string/txt_title_already_user"
+                android:textSize="18sp"/>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorLogin_bg"
+                card_view:cardElevation="6dp"
+                card_view:cardUseCompatPadding="true">
+
+                <LinearLayout
+				    android:descendantFocusability="beforeDescendants"
+					android:focusableInTouchMode="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <UIControl.CustomEditTextView
+                            android:id="@+id/edtUserNameLoginScreen"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Email"
+                            android:inputType="textEmailAddress"
+                            android:maxLength="50"
+                            android:singleLine="true"/>
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp">
+
+                        <UIControl.CustomEditTextView
+                            android:id="@+id/edtPasswordLoginScreen"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Password"
+                            android:imeOptions="actionUnspecified"
+                            android:maxLength="20"
+                            android:password="true"
+                            android:singleLine="true"/>
+
+                    </android.support.design.widget.TextInputLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="20dp"
+                        android:orientation="horizontal">
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <UIControl.CustomButton
+                    android:id="@+id/btnLogin_LoginScreen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/custom_button_bg"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:text="LOG IN"
+                    android:textColor="@drawable/custom_button_text_bg"/>
+
+                <UIControl.CustomButton
+                    android:id="@+id/btnForgotPasswordLoginScreen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="5dp"
+                    android:background="@android:color/transparent"
+                    android:text="Forgot Password?"
+                    android:textColor="@color/colorPrimary"/>
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

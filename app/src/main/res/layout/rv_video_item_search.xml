@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="2dp">
+
+    <RelativeLayout
+        android:layout_width="160dp"
+        android:layout_height="100dp"
+        android:background="@android:color/white"
+        android:paddingStart="@dimen/margin_4dp"
+        android:paddingTop="@dimen/margin_4dp"
+        android:paddingEnd="@dimen/margin_4dp">
+
+        <ImageView
+            android:id="@+id/ivVideoThumbnail"
+            android:layout_width="160dp"
+            android:layout_height="100dp"
+            android:scaleType="fitXY"/>
+
+        <ImageView
+            android:id="@+id/ivVideoPlay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_play_circle" />
+
+        <UIControl.CustomTextViewBold
+            android:id="@+id/tvVideoDuration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="@dimen/default_half_margin"
+            android:background="@color/grey"
+            android:ellipsize="end"
+            android:padding="2dp"
+            android:singleLine="true"
+            android:textSize="@dimen/tab1frag_secondtext" />
+
+    </RelativeLayout>
+
+    <UIControl.CustomTextViewBold
+        android:id="@+id/tvVideoTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@android:color/white"
+        android:ellipsize="end"
+        android:paddingStart="@dimen/default_half_margin"
+        android:paddingTop="@dimen/margin_4dp"
+        android:paddingEnd="@dimen/margin_4dp"
+        android:singleLine="true"
+        android:textSize="@dimen/tab1frag_secondtext" />
+
+
+    <UIControl.CustomTextViewRegular
+        android:id="@+id/tvVideoDesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@android:color/white"
+        android:ellipsize="end"
+        android:paddingStart="@dimen/default_half_margin"
+        android:paddingTop="@dimen/margin_4dp"
+        android:paddingEnd="@dimen/margin_4dp"
+        android:paddingBottom="@dimen/margin_4dp"
+        android:singleLine="true"
+        android:text="sanclksncklsadklc"
+        android:textSize="@dimen/tab1frag_secondtext" />
+
+</LinearLayout>

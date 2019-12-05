@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <UIControl.CustomEditTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:hint="Subject" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <UIControl.CustomEditTextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:hint="Message" />
+    </android.support.design.widget.TextInputLayout>
+
+
+
+    <UIControl.CustomButton
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/custom_button_bg"
+        android:backgroundTint="@color/colorPrimary"
+        android:text="SUBMIT"
+        android:textColor="@drawable/custom_button_text_bg" />
+
+
+</LinearLayout>

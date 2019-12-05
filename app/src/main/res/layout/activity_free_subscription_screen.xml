@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_PalletEstimatorScreen"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:id="@+id/clickable_layoutResultScreen"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="left"
+            android:background="@drawable/clickable_layout">
+
+            <ImageView
+                android:id="@+id/back_Arrow"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/left_arrow" />
+
+        </RelativeLayout>
+
+        <UIControl.CustomTextViewRegular
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Refer Friend"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/text_size_title" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="@dimen/changepassword_margin"
+        android:layout_marginRight="@dimen/changepassword_margin"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <UIControl.CustomTextViewRegular
+            android:id="@+id/txtDeviceTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+
+        <!--<android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            app:cardUseCompatPadding="true"
+            card_view:cardCornerRadius="7dp"
+            card_view:cardElevation="8dp">-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_centerInParent="true"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/share_button" />
+
+            </RelativeLayout>
+
+            <UIControl.CustomTextViewRegular
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="Share your Referral Code\nwith Friends/Family"
+                android:textAllCaps="true"
+                android:textSize="@dimen/text_size" />
+
+
+            <UIControl.CustomTextViewRegular
+                android:id="@+id/txtReferCodeFreeSubscriptionScreen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:text=""
+                android:visibility="gone"
+                android:textAllCaps="true"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/text_size" />
+
+
+            <!--<ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:scrollbars="vertical">-->
+
+            <UIControl.CustomTextViewRegular
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="@string/txt_referral_message"
+                android:textAllCaps="false"
+                android:textSize="16sp" />
+
+            <!--    </ScrollView>-->
+
+            <UIControl.CustomButton
+                android:id="@+id/btnReferfriendFreeSubscriptionScreen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/custom_button_bg"
+                android:backgroundTint="@color/colorPrimary"
+                android:text="INVITE FRIENDS"
+                android:textColor="@drawable/custom_button_text_bg" />
+
+        </LinearLayout>
+        <!-- </android.support.v7.widget.CardView>-->
+    </LinearLayout>
+</LinearLayout>

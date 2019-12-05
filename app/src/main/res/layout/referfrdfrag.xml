@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+
+    <UIControl.CustomTextViewRegular
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:gravity="left"
+        android:text="Refer friends and add free trial day"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="@dimen/text_size" />
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardCornerRadius="7dp"
+        card_view:cardElevation="6dp"
+        card_view:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <UIControl.CustomTextViewRegular
+                android:id="@+id/txtReferralCodeReferAllScreen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/text_size" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_vertical"
+
+                    android:background="@drawable/share_facebook" />
+
+                <UIControl.CustomButton
+                    android:id="@+id/btnFacebookShareReferAllScreen"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:background="@android:color/transparent"
+                    android:gravity="left|center_vertical"
+                    android:text="FaceBook"
+                    android:textColor="@android:color/black"
+                    android:textDirection="ltr"
+                    android:textSize="@dimen/text_size" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_margin="10dp"
+
+                android:background="@android:color/darker_gray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/share_google_plus" />
+
+                <UIControl.CustomButton
+                    android:id="@+id/btnGooglePlusShareReferAllScreen"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="5dp"
+                    android:background="@android:color/transparent"
+                    android:gravity="left|center_vertical"
+                    android:text="Google + "
+                    android:textColor="@android:color/black"
+                    android:textDirection="ltr"
+                    android:textSize="@dimen/text_size" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_margin="10dp"
+                android:background="@android:color/darker_gray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/share_whatsapp" />
+
+                <UIControl.CustomButton
+                    android:id="@+id/btnWhatsAppShareReferAllScreen"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="5dp"
+                    android:background="@android:color/transparent"
+                    android:gravity="left|center_vertical"
+                    android:text="WhatsApp"
+                    android:textColor="@android:color/black"
+                    android:textDirection="ltr"
+                    android:textSize="@dimen/text_size" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_margin="10dp"
+
+                android:background="@android:color/darker_gray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/share_sms" />
+
+                <UIControl.CustomButton
+                    android:id="@+id/btnSendSMSShareReferAllScreen"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@android:color/transparent"
+                    android:gravity="left|center_vertical"
+                    android:text="Send SMS"
+                    android:textColor="@android:color/black"
+                    android:textDirection="ltr"
+                    android:textSize="@dimen/text_size" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_margin="10dp"
+
+                android:background="@android:color/darker_gray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/share_email" />
+
+                <UIControl.CustomButton
+                    android:id="@+id/btnMailShareReferAllScreen"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@android:color/transparent"
+                    android:gravity="left|center_vertical"
+                    android:text="Send Email"
+                    android:textColor="@android:color/black"
+                    android:textDirection="ltr"
+                    android:textSize="@dimen/text_size" />
+            </LinearLayout>
+
+
+            <UIControl.CustomTextViewRegular
+                android:id="@+id/deviceid_ReferFrdFrag"
+                android:layout_marginTop="20dp"
+                android:textSize="@dimen/text_size"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Device ID"
+                android:visibility="gone"/>
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

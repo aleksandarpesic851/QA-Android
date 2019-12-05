@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "775249499576",
+    "project_id": "visualphysics-1318"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:775249499576:android:f4a0b902c903a4e6",
+        "android_client_info": {
+          "package_name": "com.visualphysics"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "775249499576-gng9u2b9ufm1vnlc44ttpe52v45r1kk2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.visualphysics",
+            "certificate_hash": "B48BB94880AE342E1B79D973CFDCCA622699EBBF"
+          }
+        },
+        {
+          "client_id": "775249499576-efr1rq6879t6lo8st73ce5isnia0cmgu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA8uJhZ_S4gn7iqbQVC2FsgTHsWUHSiTac"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

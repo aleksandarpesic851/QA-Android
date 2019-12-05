@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:padding="10dp"
+    android:layout_height="match_parent">
+
+
+    <UIControl.CustomTextViewRegular
+        android:layout_margin="10dp"
+        android:id="@+id/text_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="@dimen/text_size"
+        android:text="Delete the download videos of this chapter?"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dp"
+        android:orientation="horizontal">
+
+        <UIControl.CustomButton
+            android:id="@+id/btn_no"
+            android:background="@drawable/custom_button_bg"
+            android:textColor="@drawable/custom_button_text_bg"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="NO"/>
+
+        <UIControl.CustomButton
+            android:id="@+id/btn_yes"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/custom_button_bg"
+            android:textColor="@drawable/custom_button_text_bg"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="YES"/>
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

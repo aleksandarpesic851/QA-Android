@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="56dp"
+    android:orientation="horizontal">
+
+    <UIControl.CustomTextViewRegular
+        android:id="@+id/txtActionBarHeader"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="You are"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/text_size_question"
+        android:textStyle="bold"
+        android:visibility="visible" />
+
+</LinearLayout>

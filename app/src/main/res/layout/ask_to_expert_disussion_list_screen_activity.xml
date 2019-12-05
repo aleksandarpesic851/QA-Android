@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rLayoutBottomViewAskToExpertDiscussionListScreen"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+        android:visibility="visible">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            app:cardBackgroundColor="@color/com_facebook_button_background_color_disabled"
+            android:layout_toLeftOf="@+id/fabSubmitAskToExpertDiscussionListScreen">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <UIControl.CustomEditTextView
+                    android:id="@+id/edtMessageAskToExpertDiscussionListScreen"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="@android:color/transparent"
+                    android:paddingLeft="7dp"
+                    android:paddingRight="7dp"
+                    android:paddingTop="7dp"
+                    android:paddingBottom="7dp"
+                    android:maxLines="4"
+                    android:inputType="textMultiLine"
+                    android:hint="Type a message"/>
+
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fabSubmitAskToExpertDiscussionListScreen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/send"
+            app:elevation="0dp"
+            app:pressedTranslationZ="0dp"
+            app:fabSize="normal"
+            />
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerViewAskToExpertDiscussionListScreen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/rLayoutBottomViewAskToExpertDiscussionListScreen">
+
+    </android.support.v7.widget.RecyclerView>
+
+</RelativeLayout>

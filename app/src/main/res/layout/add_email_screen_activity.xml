@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="20dp"
+    android:layout_marginLeft="@dimen/login_margin"
+    android:layout_marginRight="@dimen/login_margin"
+    android:layout_marginTop="20dp"
+    android:orientation="vertical">
+
+    <UIControl.CustomTextViewRegular
+        android:id="@+id/txtReferralCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/txt_referral_code"
+        android:textSize="15sp"
+        android:visibility="gone" />
+
+    <UIControl.CustomTextViewRegular
+        android:id="@+id/txtPleaseProvideEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="@string/txt_please_provide_email"
+        android:textSize="@dimen/text_size"
+        android:visibility="gone" />
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <UIControl.CustomEditTextView
+            android:id="@+id/edtEmailAddEmailScreen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="Email*"
+            android:inputType="textEmailAddress"
+            android:maxLength="50" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <UIControl.CustomTextViewRegular
+        android:id="@+id/txtOtpSent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginTop="5dp"
+        android:background="@android:color/transparent"
+        android:minHeight="0dp"
+        android:text="@string/txt_otp_will_sent"
+        android:visibility="gone" />
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <UIControl.CustomEditTextView
+            android:id="@+id/edtRefferalCodeAddEmailScreen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Referral Code"
+            android:imeOptions="actionUnspecified"
+            android:inputType="text"
+            android:maxLength="6"
+            android:maxLines="1"
+            android:textSize="@dimen/text_size" />
+    </android.support.design.widget.TextInputLayout>
+
+    <LinearLayout
+        android:id="@+id/lLayoutButtonViewAddEmailScreen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+
+        <UIControl.CustomButton
+            android:id="@+id/btnSkipAddEmailScreen"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/custom_button_bg"
+            android:backgroundTint="@color/colorPrimary"
+            android:text="SKIP"
+            android:textColor="@drawable/custom_button_text_bg"
+            android:visibility="gone" />
+
+        <UIControl.CustomButton
+            android:id="@+id/btnSubmitAddEmailScreen"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/custom_button_bg"
+            android:backgroundTint="@color/colorPrimary"
+            android:text="SUBMIT"
+            android:textColor="@drawable/custom_button_text_bg" />
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rLayoutDeviceAlreadyRegViewAddEmailScreen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <UIControl.CustomTextViewRegular
+            android:id="@+id/txtMsgAddEmailScreen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center_horizontal"
+            android:text="@string/msg_device_already_register_referral_screen"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp" />
+
+        <UIControl.CustomButton
+            android:id="@+id/btnNextAddEmailScreen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/custom_button_bg"
+            android:backgroundTint="@color/colorPrimary"
+            android:text="NEXT"
+            android:textColor="@drawable/custom_button_text_bg" />
+
+    </RelativeLayout>
+
+</LinearLayout>
+

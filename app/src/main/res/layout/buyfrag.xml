@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <UIControl.CustomTextViewRegular
+        android:id="@+id/txtLabelBuyScreen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="Choose Subscription : "
+        android:textSize="18sp"
+        android:visibility="gone" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerViewPackageScreen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/lLayoutBottomViewPackageScreen"
+        android:layout_below="@+id/txtLabelBuyScreen"
+        android:layout_marginTop="15dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:padding="10dp"
+        android:visibility="gone">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/lLayoutBottomViewPackageScreen"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical" />
+
+    <LinearLayout
+        android:id="@+id/lLayoutBottomViewPackageScreen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <UIControl.CustomTextViewRegular
+            android:id="@+id/txtMoreOptionPackageScreen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="20dp"
+            android:background="@android:color/transparent"
+            android:text="@string/txt_more_buy_options"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <UIControl.CustomButton
+            android:id="@+id/btnPaytmPackageScreen"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/custom_button_bg"
+            android:backgroundTint="@color/colorPrimary"
+            android:text="Paytm"
+            android:textColor="@drawable/custom_button_text_bg"
+            android:visibility="gone" />
+
+        <UIControl.CustomButton
+            android:id="@+id/btnNextPackageScreen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/custom_button_bg"
+            android:backgroundTint="@color/colorPrimary"
+            android:text="NEXT"
+            android:textColor="@drawable/custom_button_text_bg" />
+    </LinearLayout>
+
+    <UIControl.CustomTextViewRegular
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:padding="10dp"
+        android:text="Online Subscription"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/text_size_title"
+        android:visibility="gone" />
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:visibility="gone"
+        card_view:cardCornerRadius="7dp"
+        card_view:cardElevation="6dp"
+        card_view:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3 Months of 750"
+                    android:textSize="@dimen/text_size" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="6 Months of 1200"
+                    android:textSize="@dimen/text_size" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1 year of 2500"
+                    android:textSize="@dimen/text_size" />
+            </RadioGroup>
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+    <UIControl.CustomTextViewRegular
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
+        android:padding="10dp"
+        android:text="Memory Card"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/text_size_title"
+        android:visibility="gone" />
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:visibility="gone"
+
+        card_view:cardCornerRadius="7dp"
+        card_view:cardElevation="6dp"
+        card_view:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3 Months of 750"
+                    android:textSize="@dimen/text_size" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="6 Months of 1200"
+                    android:textSize="@dimen/text_size" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1 year of 2500"
+                    android:textSize="@dimen/text_size" />
+            </RadioGroup>
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+</RelativeLayout>

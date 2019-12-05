@@ -1,0 +1,130 @@
+{
+  "project_info": {
+    "project_number": "522246737329",
+    "firebase_url": "https://fir-pushnotification-fec42.firebaseio.com",
+    "project_id": "fir-pushnotification-fec42",
+    "storage_bucket": "fir-pushnotification-fec42.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:522246737329:android:2aad4a1e3ff8e7f5",
+        "android_client_info": {
+          "package_name": "iziss.push.firebasepushnotification"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "522246737329-mv1iafn1m8ot35ficb2dakkpan7tr7tn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAhFdm_XlKtWmCUnTIDtIPoZBB5TbVhc1s"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:522246737329:android:958b17583e959a68",
+        "android_client_info": {
+          "package_name": "com.iziss.chatting"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "522246737329-edsrt3snnn3cfp8n0hqqjk1h497kdbe2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.iziss.chatting",
+            "certificate_hash": "b258b62e08da59a81e21b654f5858268fdd70f57"
+          }
+        },
+        {
+          "client_id": "522246737329-mv1iafn1m8ot35ficb2dakkpan7tr7tn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAhFdm_XlKtWmCUnTIDtIPoZBB5TbVhc1s"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "522246737329-mv1iafn1m8ot35ficb2dakkpan7tr7tn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:522246737329:android:f4a0b902c903a4e6",
+        "android_client_info": {
+          "package_name": "com.visualphysics"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "522246737329-2cm831bm1hgbm1r2ucq3gjno3dm5jbg7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.visualphysics",
+            "certificate_hash": "b258b62e08da59a81e21b654f5858268fdd70f57"
+          }
+        },
+        {
+          "client_id": "522246737329-mv1iafn1m8ot35ficb2dakkpan7tr7tn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAhFdm_XlKtWmCUnTIDtIPoZBB5TbVhc1s"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "522246737329-mv1iafn1m8ot35ficb2dakkpan7tr7tn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+
+
+ 
+
+<ActionToken xmlns="urn:marlin:broadband:1-2:nemo:services:action-token"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <ConfigurationInfo broadbandServiceId="urn:marlin:organization:seacert:eval-marlin-service:500"
+                       configVersion="2">
+        <ResourceLocation>http://bb.test.expressplay.com:80/mbs/ConfigurationToken.xml</ResourceLocation>
+    </ConfigurationInfo>
+    <LicenseAcquisition>
+    
+      <Type>personality</Type>
+    
+      <BusinessToken>AA8ABAADDqwABW5seXRuaUEAEJ+W9b/RAWu9Iw2kCWkytHUBgFlrQKCW+Vzdtk5dC6oQiMe5KVT3
+ve3b5fsg7ez1y+U2z+Gb31X8sNb5CnRppqJyp5bIA6zNnTBE7bGkiCYtHbft77mDs93FqGGk8FWs
+Ao7+LGsXNZuK6C0j7cbZI64K7rANXsGY88WVo62Wm9X+c+2iQJYlAsCjtf1XYehAW+I+KsYMPnYb
+5j5Mdf5LQMshvaWpTS70ci2z9beAKvxOHhqkgUYBmMTC2RBDCwRFeo70TFeIWw6Uj4MYFp8jl+cj
+asoazcJvtBc0LfsC4cqeK/55kDI0n/VkJeQdugG1HfO4E77fHT7m1mRQG2gtAyMrm5CI5iKZASPo
+4aFfCcHepKKEfnfiPTCsprAYXNLs70ygljhCFcHRCVAm973OPtWXed8CB+058dAZt9/0xIwbz3KH
+UT8O5uiwrlaUJaH15fiB8kZQPnOIPiK2B20MI5RNq1yqNi3eQbyeAC4uEIjuSYKKuT3ujHGtJnDr
+MZ27rsqc3lbYA0HTW9QM9Ky/EewnNQAAABQeTin524FHy//Uqaq+UEG92IDE9w==
+</BusinessToken>
+    </LicenseAcquisition>
+</ActionToken>

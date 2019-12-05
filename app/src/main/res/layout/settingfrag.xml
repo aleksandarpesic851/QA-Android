@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="@dimen/img_setting"
+            android:layout_height="@dimen/img_setting"
+            android:layout_gravity="center_vertical|left"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/delink_device" />
+
+        <UIControl.CustomButton
+            android:id="@+id/btnDelinkDeviceSettingFrag"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:background="@android:color/transparent"
+            android:gravity="left|center_vertical"
+            android:text="Change Device"
+            android:textAllCaps="false"
+            android:textSize="@dimen/text_size" />
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_gravity="center_vertical|right"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/right_arrow" />
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray" />
+
+
+    <FrameLayout
+        android:id="@+id/frameLayoutChangePasswordSettingScreen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="@dimen/img_setting"
+            android:layout_height="@dimen/img_setting"
+            android:layout_gravity="center_vertical|left"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/changepass" />
+
+        <UIControl.CustomButton
+            android:id="@+id/btn_ChangePasswordSettingFrag"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:background="@android:color/transparent"
+            android:gravity="left|center_vertical"
+            android:text="Change Password"
+            android:textAllCaps="false"
+            android:textSize="@dimen/text_size" />
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_gravity="center_vertical|right"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/right_arrow" />
+    </FrameLayout>
+
+    <View
+        android:id="@+id/speratorChangePasswordSettingScreen"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="@dimen/img_setting"
+            android:layout_height="@dimen/img_setting"
+            android:layout_gravity="center_vertical|left"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/sync" />
+
+        <UIControl.CustomButton
+            android:id="@+id/btn_SyncDataSettingFrag"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:background="@android:color/transparent"
+            android:gravity="left|center_vertical"
+            android:text="Update App"
+            android:textAllCaps="false"
+            android:textSize="@dimen/text_size" />
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_gravity="center_vertical|right"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/right_arrow" />
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray" />
+
+    <FrameLayout
+        android:id="@+id/frameLayoutExams"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="@dimen/img_setting"
+            android:layout_height="@dimen/img_setting"
+            android:layout_gravity="center_vertical|left"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/icon_exam" />
+
+        <UIControl.CustomButton
+            android:id="@+id/btnExams"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:background="@android:color/transparent"
+            android:gravity="left|center_vertical"
+            android:text="Exams"
+            android:textAllCaps="false"
+            android:textSize="@dimen/text_size" />
+
+        <ImageView
+            android:id="@+id/ivExam"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_gravity="center_vertical|right"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/right_arrow" />
+
+    </FrameLayout>
+
+    <View
+        android:id="@+id/separatorExam"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray" />
+
+    <!-- To choose Vp Exam-->
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:descendantFocusability="beforeDescendants"
+            android:focusableInTouchMode="true"
+            android:paddingTop="10dp">
+
+            <UIControl.CustomTextViewRegular
+                android:id="@+id/question2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:text="Which exam are you preparing for ?"
+                android:textColor="@color/black_87"
+                android:textSize="18sp"
+                android:visibility="gone" />
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/option_21_card"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/question2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                card_view:cardCornerRadius="6dp"
+                card_view:cardElevation="5dp"
+                card_view:cardPreventCornerOverlap="false"
+                card_view:cardUseCompatPadding="true">
+
+                <RelativeLayout
+                    android:id="@+id/option_21"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/questionnaire_rectangle">
+
+                    <UIControl.CustomTextViewRegular
+                        android:id="@+id/option_21_ans"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginTop="15dp"
+                        android:gravity="center"
+                        android:text="@string/option_2_1"
+                        android:textColor="@color/black_87"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/option_22_card"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/option_21_card"
+                android:layout_centerHorizontal="true"
+                card_view:cardCornerRadius="6dp"
+                card_view:cardElevation="5dp"
+                card_view:cardPreventCornerOverlap="false"
+                card_view:cardUseCompatPadding="true">
+
+                <RelativeLayout
+                    android:id="@+id/option_22"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/questionnaire_rectangle">
+
+                    <UIControl.CustomTextViewRegular
+                        android:id="@+id/option_22_ans"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginTop="15dp"
+                        android:gravity="center"
+                        android:text="@string/option_2_2"
+                        android:textColor="@color/black_87"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/option_23_card"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/option_22_card"
+                android:layout_centerHorizontal="true"
+                card_view:cardCornerRadius="6dp"
+                card_view:cardElevation="5dp"
+                card_view:cardPreventCornerOverlap="false"
+                card_view:cardUseCompatPadding="true">
+
+                <RelativeLayout
+                    android:id="@+id/option_23"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/questionnaire_rectangle">
+
+                    <UIControl.CustomTextViewRegular
+                        android:id="@+id/option_23_ans"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginTop="15dp"
+                        android:gravity="center"
+                        android:text="@string/option_2_3"
+                        android:textColor="@color/black_87"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/option_24_card"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/option_23_card"
+                android:layout_centerHorizontal="true"
+                card_view:cardCornerRadius="6dp"
+                card_view:cardElevation="3dp"
+                card_view:cardPreventCornerOverlap="false"
+                card_view:cardUseCompatPadding="true">
+
+                <RelativeLayout
+                    android:id="@+id/option_24"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/questionnaire_rectangle">
+
+                    <!--<EditText
+                        android:id="@+id/option_24_ans"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginTop="2dp"
+                        android:gravity="center_horizontal"
+                        android:hint="Others"
+                        android:maxLines="2"
+                        android:textColor="@color/black_87"
+                        android:textSize="16sp" />-->
+
+                    <UIControl.CustomTextViewRegular
+                        android:id="@+id/option_24_ans"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginTop="15dp"
+                        android:gravity="center"
+                        android:text="@string/option_2_4"
+                        android:textColor="@color/black_87"
+                        android:textSize="16sp" />
+
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+            <RelativeLayout
+                android:id="@+id/rlSave"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/option_24_card"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp">
+
+                <UIControl.CustomButton
+                    android:id="@+id/btnSave"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:background="@drawable/custom_button_bg"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:text="SAVE"
+                    android:textColor="@drawable/custom_button_text_bg" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+    <!-- <FrameLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content">
+
+         <ImageView
+             android:layout_width="@dimen/img_setting"
+             android:layout_height="@dimen/img_setting"
+             android:layout_marginLeft="5dp"
+             android:layout_gravity="center_vertical|left"
+             android:src="@drawable/star" />
+
+         <UIControl.CustomButton
+             android:id="@+id/btn_RateAppSettingFrag"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="35dp"
+             android:textAllCaps="false"
+             android:background="@android:color/transparent"
+             android:gravity="left|center_vertical"
+             android:text="Rate App"
+             android:textSize="@dimen/text_size" />
+
+         <ImageView
+             android:layout_width="15dp"
+             android:layout_height="15dp"
+             android:layout_marginRight="10dp"
+             android:layout_gravity="center_vertical|right"
+             android:src="@drawable/right_arrow" />
+     </FrameLayout>
+
+     <View
+         android:layout_width="match_parent"
+         android:layout_height="1dp"
+
+         android:background="@android:color/darker_gray" />-->
+
+    <!--<FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="@dimen/img_setting"
+            android:layout_height="@dimen/img_setting"
+            android:layout_marginLeft="5dp"
+            android:layout_gravity="center_vertical|left"
+            android:src="@drawable/shield" />
+
+        <UIControl.CustomButton
+            android:textAllCaps="false"
+            android:id="@+id/btn_PrivacyPolicySettingFrag"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:background="@android:color/transparent"
+            android:gravity="left|center_vertical"
+            android:text="Privacy Policy"
+            android:textSize="@dimen/text_size" />
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="center_vertical|right"
+            android:src="@drawable/right_arrow" />
+    </FrameLayout>-->
+
+
+</LinearLayout>

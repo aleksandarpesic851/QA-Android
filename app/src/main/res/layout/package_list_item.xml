@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <UIControl.CustomRadioButton
+            android:id="@+id/rdPackageNamePackageListItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/colorPrimary"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/form_margin_ten"
+            android:paddingRight="@dimen/form_margin_ten">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center|left"
+                android:orientation="horizontal">
+
+                <UIControl.CustomTextViewRegular
+                    android:id="@+id/txtPackageName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Package Name"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="20sp" />
+
+                <UIControl.CustomTextViewRegular
+                    android:id="@+id/txtOffer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/form_margin_ten"
+                    android:background="@drawable/offer_drawable"
+                    android:paddingLeft="7dp"
+                    android:paddingRight="7dp"
+                    android:text="OFFER"
+                    android:textColor="@color/colorOfferText"
+                    android:textSize="12sp"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|left"
+                android:orientation="horizontal">
+
+                <UIControl.CustomTextViewRegular
+                    android:id="@+id/txtOriginalPricePackageListItem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Original Price : 110"
+                    android:visibility="gone" />
+
+                <UIControl.CustomTextViewRegular
+                    android:id="@+id/txtOfferPricePackageListItem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Offer Price : 110"
+                    android:textColor="@android:color/black" />
+            </LinearLayout>
+
+            <UIControl.CustomTextViewRegular
+                android:id="@+id/txtPeriodPackageListItem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:text="Period : 5 Months"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|right"
+            android:background="@color/colorDaysBackGround"
+            android:orientation="vertical">
+
+            <UIControl.CustomTextViewRegular
+                android:id="@+id/txtOriginalDays"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center|top|left"
+                android:padding="2dp"
+                android:text="90"
+                android:textColor="@color/colorDaysText"
+                android:textSize="15sp"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <UIControl.CustomTextViewRegular
+                    android:id="@+id/txtOfferDays"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center|bottom"
+                    android:paddingTop="10dp"
+                    android:text="100"
+                    android:textColor="@color/colorDaysText"
+                    android:textSize="20sp" />
+
+                <UIControl.CustomTextViewRegular
+                    android:id="@+id/txtDays"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="DAYS"
+                    android:textColor="@color/colorDaysText"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+</LinearLayout>

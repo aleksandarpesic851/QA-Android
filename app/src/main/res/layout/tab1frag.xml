@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp">
+
+        <LinearLayout
+            android:layout_toLeftOf="@+id/tab1frag_download_layout"
+            android:id="@+id/clickable_LinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent">
+
+            <FrameLayout
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start">
+
+                <ImageView
+                    android:id="@+id/imgChapter_ChapterListItemScreen"
+                    android:layout_width="@dimen/tab1fragimg_width"
+                    android:layout_height="@dimen/tab1fragimg_height"
+                    android:src="@drawable/default_img"
+                    android:scaleType="fitCenter"
+                    android:adjustViewBounds="true"/>
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/tab1frag_marginleft"
+                android:orientation="vertical">
+
+                <UIControl.CustomTextViewRegular
+                    android:id="@+id/text_TabCustomeLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-2dp"
+                    android:text="Straight Line Motion"
+                    android:textColor="#000000"
+                    android:textSize="17sp"
+                    android:singleLine="true"
+                    android:ellipsize="end"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+
+                    <UIControl.CustomTextViewRegular
+                        android:id="@+id/txtNoOfVideosChapterListItemScreen"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="65 Videos"
+                        android:layout_marginRight="5dp"
+                        android:textSize="@dimen/tab1frag_secondtext" />
+
+                    <View
+                        android:id="@+id/separatorOne"
+                        android:layout_width="1dp"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginRight="3dp"
+                        android:background="@android:color/darker_gray" />
+
+                    <UIControl.CustomTextViewRegular
+                        android:id="@+id/txtTotalDurationChapterListItemScreen"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:text="0.0 hrs"
+                        android:textSize="@dimen/tab1frag_secondtext" />
+
+                    <View
+                        android:id="@+id/separatorTwo"
+                        android:layout_width="1dp"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginRight="3dp"
+                        android:background="@android:color/darker_gray" />
+
+                    <UIControl.CustomTextViewRegular
+                        android:id="@+id/txtTotalSizeChapterListItemScreen"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="230 MB"
+                        android:textSize="@dimen/tab1frag_secondtext" />
+
+
+                </LinearLayout>
+
+                <!--<View-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="1dp"-->
+                <!--android:layout_marginLeft="3dp"-->
+                <!--android:layout_marginRight="3dp"-->
+                <!--android:background="@android:color/darker_gray" />-->
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/tab1frag_download_layout"
+            android:layout_width="35dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true">
+
+            <!--<LinearLayout-->
+
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:orientation="vertical">-->
+
+            <ImageView
+                android:id="@+id/tab1Fragdownload2"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/download_2"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/tab1Fragdownload1"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/download_1"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"/>
+
+            <!--</LinearLayout-->
+            <!-->-->
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/divider_tab1"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="@dimen/margin_divider_for_frag"
+        android:background="#d3d3d3" />
+</LinearLayout>
+
+

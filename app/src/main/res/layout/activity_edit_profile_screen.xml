@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <UIControl.CustomEditTextView
+                    android:id="@+id/edt_SignUpFirstname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Name"
+                    android:textSize="@dimen/text_size" />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <UIControl.CustomEditTextView
+                    android:id="@+id/edt_SignUpCellPhone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Cell Phone"
+                    android:textSize="@dimen/text_size" />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <UIControl.CustomButton
+                android:id="@+id/btn_SignUpScreen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/custom_button_bg"
+                android:backgroundTint="@color/colorPrimary"
+                android:text="Edit Profile"
+                android:textColor="@drawable/custom_button_text_bg" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

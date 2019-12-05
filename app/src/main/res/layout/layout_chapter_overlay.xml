@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llChapterOverlay"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:visibility="visible">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorGuideBg"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="50dp"
+                android:src="@mipmap/arrow_three" />
+
+            <UIControl.CustomTextViewRegular
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="@string/guide_tap_to_open"
+                android:textColor="@color/colorGuideTextColor"
+                android:textSize="@dimen/guide_text_size"
+                android:visibility="visible" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="50dp"
+                android:src="@mipmap/arrow_one" />
+
+            <UIControl.CustomTextViewRegular
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="@string/guide_download_chapter"
+                android:textColor="@color/colorGuideTextColor"
+                android:textSize="@dimen/guide_text_size"
+                android:visibility="visible" />
+
+
+        </LinearLayout>
+
+        <UIControl.CustomTextViewRegular
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="70dp"
+            android:background="@mipmap/bg_transparent"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="@string/guide_watch_full_chapter"
+            android:textColor="@color/colorGuideTextColor"
+            android:textSize="@dimen/guide_text_size"
+            android:visibility="visible" />
+
+        <UIControl.CustomTextViewRegular
+            android:id="@+id/txtGotIt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/btn_white_border"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/guide_got_it"
+            android:textColor="@color/colorGuideTextColor"
+            android:textSize="@dimen/guide_got_it_text_size"
+            android:visibility="visible" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,90 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="autoCompleteTextViewStyle">@style/cursorColor</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="drawerArrowStyle">@style/DrawerIconStyle</item>
+        <item name="autoCompleteTextViewStyle">@style/cursorColor</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.NoActionBar.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="DrawerIconStyle" parent="@style/Widget.AppCompat.DrawerArrowToggle">
+        <item name="color">@android:color/white</item>
+    </style>
+
+    <style name="NavigationDrawerStyle">
+        <item name="android:typeface">monospace</item>
+    </style>
+
+
+    <style name="AppCompatAlertDialogStyle" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorAccent">@color/colorPrimary</item>
+        <item name="android:textColorPrimary">#000000</item>
+        <item name="android:background">#ffffff</item>
+    </style>
+
+    <style name="Theme.Rating" parent="Theme.AppCompat.Light">
+        <item name="colorAccent">#DAA520</item>
+    </style>
+
+    <style name="cursorColor" parent="Widget.AppCompat.AutoCompleteTextView">
+        <item name="android:textCursorDrawable">@drawable/custom_cursor</item>
+    </style>
+
+
+    <style name="style_radio_button">
+
+        <item name="android:textColor">@color/option_color_black</item>
+        <item name="android:padding">@dimen/padding_radio</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginBottom">@dimen/padding_radio</item>
+        <item name="android:background">@drawable/custom_radio_button</item>
+        <item name="android:textSize">@dimen/text_size_options</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:button">@android:color/transparent</item>
+
+    </style>
+
+    <style name="style_radio_button_old">
+
+        <item name="android:textColor">@color/option_color</item>
+        <item name="android:padding">@dimen/margin_radio_button</item>
+        <item name="android:textSize">@dimen/text_size_options</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+
+    </style>
+
+    <style name="style_share_button">
+
+        <item name="android:layout_width">@dimen/share_btn_dimens</item>
+        <item name="android:layout_height">@dimen/share_btn_dimens</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_margin">@dimen/default_half_margin</item>
+    </style>
+
+    <style name="style_share_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textSize">26sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+
+</resources>

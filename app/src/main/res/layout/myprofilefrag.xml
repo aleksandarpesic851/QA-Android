@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginBottom="20dp"
+    android:layout_marginLeft="@dimen/login_margin"
+    android:layout_marginRight="@dimen/login_margin"
+    android:layout_marginTop="20dp">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/profile_pic"
+            android:background="@drawable/circle_shape_employee"
+            android:visibility="gone"/>
+
+            <ImageView
+                android:id="@+id/edit_MyProfileFrag"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/circle_grey_indicator"
+                android:src="@drawable/ic_edit"
+                android:visibility="gone"/>
+
+
+    </RelativeLayout>
+
+
+    <UIControl.CustomTextViewRegular
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text=""
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp"
+        android:visibility="gone"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <UIControl.CustomEditTextView
+                android:id="@+id/edtUserIDProfileScreen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="User ID"
+                android:textSize="@dimen/text_size"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <UIControl.CustomEditTextView
+                android:id="@+id/edtFullNameProfileScreen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Name"
+                android:textSize="@dimen/text_size" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <UIControl.CustomEditTextView
+                android:id="@+id/edtEmailProfileScreen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email"
+                android:textSize="@dimen/text_size" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <UIControl.CustomEditTextView
+                android:id="@+id/edtMobileProfileScreen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Mobile"
+                android:textSize="@dimen/text_size"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <UIControl.CustomEditTextView
+                android:id="@+id/edtSubscriptionEndDateProfileScreen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Subscription End Date"
+                android:textSize="@dimen/text_size"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <UIControl.CustomButton
+            android:id="@+id/btnGetSubscriptionEndDateProfileSceen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Check and Update Subscription"
+            android:layout_gravity="end"
+            android:background="@android:color/transparent"
+            android:textColor="@color/colorPrimary"
+            android:minHeight="0dp"/>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp">
+
+            <UIControl.CustomEditTextView
+                android:id="@+id/edtCouponCodeProfileScreen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Coupon Code"
+                android:inputType="textCapCharacters"
+                android:textSize="@dimen/text_size"
+               />
+        </android.support.design.widget.TextInputLayout>
+
+        <UIControl.CustomButton
+            android:id="@+id/btnApplyCouponProfileSceen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Apply Coupon Code"
+            android:layout_gravity="end"
+            android:background="@android:color/transparent"
+            android:textColor="@color/colorPrimary"
+            android:minHeight="0dp"/>
+
+
+    </LinearLayout>
+
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:layout_marginTop="50dp"-->
+
+        <!--android:orientation="vertical">-->
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="horizontal">-->
+
+            <!--<UIControl.CustomTextViewRegular-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_margin="10dp"-->
+                <!--android:layout_weight="1"-->
+                <!--android:text="989898989"-->
+                <!--android:textColor="@android:color/black"-->
+                <!--android:textSize="@dimen/text_size" />-->
+
+            <!--<View-->
+                <!--android:layout_width="1dp"-->
+                <!--android:layout_height="fill_parent"-->
+                <!--android:background="@android:color/darker_gray" />-->
+
+            <!--<UIControl.CustomTextViewRegular-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_margin="10dp"-->
+                <!--android:layout_weight="1"-->
+                <!--android:text="david@gmail.com"-->
+                <!--android:textColor="@android:color/black"-->
+                <!--android:textSize="@dimen/text_size" />-->
+
+
+        <!--</LinearLayout>-->
+
+        <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="1dp"-->
+            <!--android:background="@android:color/darker_gray" />-->
+
+
+    <!--</LinearLayout>-->
+
+
+</LinearLayout>

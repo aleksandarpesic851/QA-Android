@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+  <!--<item  >
+        <shape android:shape="rectangle">
+            &lt;!&ndash;apply button background transparent, full opacity&ndash;&gt;
+            <solid android:color="@color/colorPrimary"/>
+            &lt;!&ndash;make button border solid color, nontransparent&ndash;&gt;
+            <stroke android:color="@color/colorPrimary" android:width="1dp"/>
+            <corners android:radius="5dp"/>
+
+        </shape>
+    </item>-->
+
+    <item android:state_pressed="true" >
+        <shape android:shape="rectangle">
+            <!--apply button background transparent, full opacity-->
+            <solid android:color="@color/colorPrimary"/>
+            <!--make button border solid color, nontransparent-->
+            <stroke android:color="@color/colorPrimary" android:width="1dp"/>
+            <corners android:radius="5dp"/>
+
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="rectangle">
+            <!--apply button background transparent, full opacity-->
+            <solid android:color="#00ffffff"/>
+            <!--make button border solid color, nontransparent-->
+            <stroke android:color="@color/colorPrimary" android:width="1dp"/>
+            <corners android:radius="5dp"/>
+        </shape>
+    </item>
+</selector>

@@ -1,0 +1,10 @@
++Name listOfRecordsByTableName
+
++Request
+POST http://www.meva.izisstechnology.in/api/MEVAAPI
++Headers
++Body
+
++Response
++Body
+{"Response":"Test"}

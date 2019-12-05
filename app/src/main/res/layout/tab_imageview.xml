@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <ImageView
+
+        android:id="@+id/imgTabImage"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/tab_imageview_hw"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:src="@drawable/tab1_blue">
+
+    </ImageView>
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="@dimen/verticaldivider_homescreen"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|right"
+        android:layout_weight="0.1"
+        android:layout_marginLeft="1dp"
+        android:layout_marginRight="1dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="#d3d3d3"
+        android:visibility="visible" />
+
+    <!--android:layout_marginLeft="2dp"-->
+    <!--android:layout_marginTop="10dp"-->
+    <!--android:layout_marginBottom="10dp"-->
+
+
+    <!--<ProgressBar-->
+    <!--style="?android:attr/progressBarStyleLarge"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:id="@+id/progressBar"-->
+    <!--android:layout_alignBottom="@+id/imgTabImage"-->
+    <!--android:layout_toRightOf="@+id/view"-->
+    <!--android:layout_toEndOf="@+id/view"-->
+    <!--android:layout_marginLeft="124dp"-->
+    <!--android:layout_marginStart="124dp" />-->
+
+
+</LinearLayout>

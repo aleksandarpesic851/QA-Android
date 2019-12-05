@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="20dp"
+    android:layout_marginLeft="@dimen/login_margin"
+    android:layout_marginRight="@dimen/login_margin"
+    android:layout_marginTop="20dp"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/llForFirst"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <UIControl.CustomTextViewRegular
+                    android:id="@+id/txtFormTwo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/question_second"
+                    android:textSize="@dimen/text_size_question"
+                    android:visibility="visible" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RadioGroup
+                        android:id="@+id/rgQuestion2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <RadioButton
+                            android:id="@+id/rbOption_21"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/margin_radio_button"
+                            android:text="@string/option_2_1"
+                            android:textColor="@color/option_color"
+                            android:textSize="@dimen/text_size_options" />
+
+                        <RadioButton
+                            android:id="@+id/rbOption_22"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/margin_radio_button"
+                            android:text="@string/option_2_2"
+                            android:textColor="@color/option_color"
+                            android:textSize="@dimen/text_size_options" />
+
+                        <RadioButton
+                            android:id="@+id/rbOption_23"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/margin_radio_button"
+                            android:text="@string/option_2_3"
+                            android:textColor="@color/option_color"
+                            android:textSize="@dimen/text_size_options" />
+
+                        <RadioButton
+                            android:id="@+id/rbOption_24"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/margin_radio_button"
+                            android:text="@string/option_other"
+                            android:textColor="@color/option_color"
+                            android:textSize="@dimen/text_size_options" />
+                    </RadioGroup>
+
+                    <UIControl.CustomEditTextView
+                        android:id="@+id/edtOther2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:enabled="false"
+                        android:hint="@string/option_other_desc"
+                        android:inputType="textMultiLine"
+                        android:maxHeight="100dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llForSecond"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <UIControl.CustomTextViewRegular
+                    android:id="@+id/txtFormThree"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/question_third"
+                    android:textSize="@dimen/text_size_question"
+                    android:visibility="visible" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RadioGroup
+                        android:id="@+id/rgQuestion3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <RadioButton
+                            android:id="@+id/rbOption_31"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/margin_radio_button"
+                            android:text="@string/option_3_1"
+                            android:textColor="@color/option_color"
+                            android:textSize="@dimen/text_size_options" />
+
+                        <RadioButton
+                            android:id="@+id/rbOption_32"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/margin_radio_button"
+                            android:text="@string/option_3_2"
+                            android:textColor="@color/option_color"
+                            android:textSize="@dimen/text_size_options" />
+
+                        <RadioButton
+                            android:id="@+id/rbOption_33"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/margin_radio_button"
+                            android:text="@string/option_3_3"
+                            android:textColor="@color/option_color"
+                            android:textSize="@dimen/text_size_options" />
+
+                        <RadioButton
+                            android:id="@+id/rbOption_34"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/margin_radio_button"
+                            android:text="@string/option_other"
+                            android:textColor="@color/option_color"
+                            android:textSize="@dimen/text_size_options" />
+                    </RadioGroup>
+
+                    <UIControl.CustomEditTextView
+                        android:id="@+id/edtOther3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:enabled="false"
+                        android:hint="@string/option_other_desc"
+                        android:inputType="textMultiLine"
+                        android:maxHeight="100dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+
+        <UIControl.CustomButton
+            android:id="@+id/btnBack"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/custom_button_bg"
+            android:backgroundTint="@color/colorPrimary"
+            android:text="BACK"
+            android:textColor="@drawable/custom_button_text_bg"
+            android:visibility="visible" />
+
+        <UIControl.CustomButton
+            android:id="@+id/btnSubmit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/custom_button_bg"
+            android:backgroundTint="@color/colorPrimary"
+            android:text="SUBMIT"
+            android:textColor="@drawable/custom_button_text_bg"
+            android:visibility="visible" />
+
+    </LinearLayout>
+
+</LinearLayout>
+

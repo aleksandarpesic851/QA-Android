@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#017eb8</color>
+    <color name="colorPrimaryDark">#1c6283</color>
+    <color name="colorAccent">#017eb8</color>
+
+    <color name="colorLogin_bg">#d3d3d3</color>
+    <color name="colorNavigationHeader">#0080BB</color>
+    <color name="colorNavigationText">#1A1A1A</color>
+    <color name="colorNavigationGrey">#10000000</color>
+    <color name="colorNavigationWhite">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+
+    <color name="transparent">#00FFFFFF</color>
+
+    <color name="colorRadioPressed">#017eb8</color>
+    <color name="colorRadioNormal">#d3d3d3</color>
+    <color name="option_color">#017eb8</color>
+    <color name="option_color_black">#1A1A1A</color>
+
+    <color name="colorDaysBackGround">#017eb8</color>
+    <color name="colorDaysText">#FFFFFF</color>
+    <color name="colorOfferText">#FFFFFF</color>
+    <color name="colorOfferBackground">#2B8F2B</color>
+    <color name="black_87">#D9000000</color>
+    <color name="grey">#CCCCCC</color>
+
+    <color name="greyBuyStrikeThrough">#969494</color>
+
+    <color name="colorPaymentDivider">#d7d5d5</color>
+    <color name="colorGuideBg">#95000000</color>
+    <color name="colorGuideTextColor">#FFFFFF</color>
+
+</resources>

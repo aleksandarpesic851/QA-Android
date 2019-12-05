@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical">
+
+        <UIControl.CustomTextViewRegular
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/available_payment_options"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:visibility="visible" />
+
+        <LinearLayout
+            android:id="@+id/llPaytm"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorPaymentDivider" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="6dp">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/payment_options_height"
+                    android:layout_weight="2"
+                    android:src="@mipmap/icon_credit_card" />
+
+                <UIControl.CustomTextViewRegular
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="8"
+                    android:gravity="center|left"
+                    android:text="@string/credit_card"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorPaymentDivider" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="6dp">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/payment_options_height"
+                    android:layout_weight="2"
+                    android:src="@mipmap/icon_debit_card" />
+
+                <UIControl.CustomTextViewRegular
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="8"
+                    android:gravity="center|left"
+                    android:text="@string/debit_card"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorPaymentDivider" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="6dp">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/payment_options_height"
+                    android:layout_weight="2"
+                    android:src="@mipmap/icon_internet_banking" />
+
+                <UIControl.CustomTextViewRegular
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="8"
+                    android:gravity="center|left"
+                    android:text="@string/net_banking"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorPaymentDivider" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="6dp">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/payment_options_height"
+                    android:layout_weight="2"
+                    android:src="@mipmap/icon_paytm_small" />
+
+                <UIControl.CustomTextViewRegular
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="8"
+                    android:gravity="center|left"
+                    android:text="@string/paytm_wallet"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorPaymentDivider" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp">
+
+                <ImageView
+                    android:id="@+id/imgPaytmPaymentOptionScreen"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:src="@drawable/paytm_logo"
+                    android:visibility="gone" />
+
+                <UIControl.CustomButton
+                    android:id="@+id/btnPaytm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:background="@drawable/custom_button_bg"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:text="@string/proceed_to_pay"
+                    android:textColor="@drawable/custom_button_text_bg" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llPayPal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorPaymentDivider" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="6dp">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/payment_options_height"
+                    android:layout_weight="2"
+                    android:src="@mipmap/icon_credit_card" />
+
+                <UIControl.CustomTextViewRegular
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="8"
+                    android:gravity="center|left"
+                    android:text="@string/credit_card"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorPaymentDivider" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="6dp">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/payment_options_height"
+                    android:layout_weight="2"
+                    android:src="@mipmap/icon_debit_card" />
+
+                <UIControl.CustomTextViewRegular
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="8"
+                    android:gravity="center|left"
+                    android:text="@string/debit_card"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorPaymentDivider" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="6dp">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/payment_options_height"
+                    android:layout_weight="2"
+                    android:src="@mipmap/icon_paypal_small" />
+
+                <UIControl.CustomTextViewRegular
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="8"
+                    android:gravity="center|left"
+                    android:text="@string/paypal"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorPaymentDivider" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp">
+
+                <ImageView
+                    android:id="@+id/imgPaypalPaymentOptionScreen"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:src="@drawable/paypal_logo"
+                    android:visibility="gone" />
+
+                <UIControl.CustomButton
+                    android:id="@+id/btnPaypal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:background="@drawable/custom_button_bg"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:text="@string/pay_with_paypal"
+                    android:textColor="@drawable/custom_button_text_bg" />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,213 @@
+<resources>
+    <string name="app_name">VisualPhysics</string>
+    <string name="title_activity_login_screen">Sign In</string>
+
+    <string name="title_activity_forgot_password_screen">ForgotPasswordScreen</string>
+    <string name="title_activity_add_email_screen">Add Email</string>
+    <string name="title_activity_sign_up_screen">SignUpScreen</string>
+    <string name="title_activity_otpscreen">OTPScreen</string>
+    <string name="title_activity_home_screen">VisualPhysics</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="title_activity_view_video_screen">ViewVideoScreen</string>
+    <string name="title_activity_chapter_name_screen">ChapterNameScreen</string>
+    <string name="title_activity_edit_profile_screen">EditProfileScreen</string>
+    <string name="title_activity_change_password_screen">ChangePasswordScreen</string>
+    <string name="title_activity_about_us_screen">AboutUsScreen</string>
+    <string name="title_activity_privacy_policy_screen">PrivacyPolicyScreen</string>
+    <string name="title_activity_feed_back_screen">FeedBackScreen</string>
+    <string name="title_activity_web_view_screen">SurveyScreen</string>
+    <string name="title_activity_indian_form">IndianFormScreen</string>
+
+    <string name="txt_title_new_user"><u>New User ?</u></string>
+    <string name="txt_title_already_user"><u>Already have an account ?</u></string>
+
+    <string name="txt_login_message">Sign-up with Email has been discontinued for new users. Users who have signed-up with Email can still login.</string>
+    <string name="txt_social_login_info"> Google / Facebook don’t give us your password or any personal information except your email. It is totally safe.</string>
+    <string name="txt_login_with_email"><u>Login here</u></string>
+    <string name="txt_referral_code">You get a referral code when your friend invites you. Otherwise please skip this step.</string>
+
+
+    <string name="txt_login_with_social">Please use your Google/Facebook\naccount to sign-up/login.</string>
+    <string name="txt_welcome">Welcome</string>
+    <string name="txt_already_signup">Have signed-up with Email before?</string>
+
+
+    <string name="txt_referral_message">Your friends should download the app using the link only and complete registration process. This offer is valid for first time install only.\n\nFor each friend using your link, you will get 3 days free (he will get 3 days free too).\n\nFree subscription will be added automatically to your accounts. Check updated subscription end date in \'My Profile\' menu.</string>
+
+    <!-- From  Developer-->
+    <!--<string name="Fbkey">1197263510324560</string>-->
+
+    <!-- From Pawan-->
+    <string name="Fbkey">441992449484071</string>
+    <!--<string name="fb_login_protocol_scheme">fb441992449484071</string>-->
+
+    <!--Updated by IZISS-->
+    <!-- <string name="Fbkey">961942527276342</string>-->
+
+    <string-array name="country_array">
+
+        <item>Select Country</item>
+
+    </string-array>
+
+    <string name="menu_title_help_and_support">Help &amp; Support</string>
+    <string name="title_activity_free_subscription_screen">FreeSubscriptionScreen</string>
+
+    <string name="txt_more_buy_options"><u>Plans for Windows PC/Desktop</u></string>
+
+    <string name="msg_couponcode_success">Coupon code applied successfully</string>
+    <string name="msg_app_not_install_from_store">Please install the app from Google Play Store.</string>
+    <!--<string name="msg_device_time_change">You have change the time please correct it.</string>-->
+    <string name="msg_device_time_change">Your device time and date seems to be incorrect. Please correct the time and date and try again.</string>
+    <string name="msg_device_already_register_referral_screen">Free trial is valid once per device, which has already been taken on this device. You will need to purchase a subscription plan from Buy menu to continue.</string>
+    <string name="msg_install_latest_version">Please install the latest version of the app.</string>
+    <string name="msg_seconday_device_free_trial">Free trial is not available for Secondary Android accounts. You will need to buy a subscription plan.</string>
+    <string name="msg_confirm_delink_device">You can change device only 3 times. Pending subscription will be renewed on the new device. Continue ?</string>
+    <string name="msg_license_expired">Validating and Updating license...</string>
+    <string name="msg_license_unable_to_acquire">Unable to acquire license. Please try later.</string>
+    <string name="msg_sync_data_successfully">App updated successfully.</string>
+    <string name="msg_delete_chapter">Would you like to Download or Delete the entire chapter ?</string>
+    <string name="msg_chapter_delete_successfully">Videos deleted successfully.</string>
+    <string name="msg_free_trial_1_1_1">Visual Physics can help you with fast learning and revision of concepts (Theory) and practice of important problems (Solved Problems) for JEE Main.</string>
+    <string name="msg_free_trial_1_1_2">Visual Physics can help you with in-depth learning of concepts (Theory) and techniques to solve problems faster (Solved Problems) for JEE Main.</string>
+    <string name="msg_free_trial_1_1_3">Please focus on Theory section of each and every chapter, to get in-depth understading of concepts and basic applications for JEE Main.</string>
+    <string name="msg_free_trial_1_1_4">Please focus on Theory section of each and every chapter, to get in-depth understading of concepts and basic applications for JEE Main.</string>
+    <string name="msg_free_trial_1_2_1">Visual Physics can help you with fast learning and revision of concepts (Theory) and practice of important problems (Solved Problems) for JEE Main &amp; Advanced.</string>
+    <string name="msg_free_trial_1_2_2">Visual Physics can help you with in-depth learning of concepts (Theory) and techniques to solve problems faster (Solved Problems) for JEE Main &amp; Advanced.</string>
+    <string name="msg_free_trial_1_2_3">Please focus on Theory section of each and every chapter, to get in-depth understading of concepts and basic applications for JEE Main &amp; Advanced.</string>
+    <string name="msg_free_trial_1_2_4">Please focus on Theory section of each and every chapter, to get in-depth understading of concepts and basic applications for JEE Main &amp; Advanced.</string>
+    <string name="msg_free_trial_1_3_1">Visual Physics can help you with fast learning and revision of concepts (Theory) and practice of important problems (Solved Problems) for NEET / AIIMS.</string>
+    <string name="msg_free_trial_1_3_2">Visual Physics can help you with in-depth learning of concepts (Theory) and techniques to solve problems faster (Solved Problems) for NEET / AIIMS.</string>
+    <string name="msg_free_trial_1_3_3">Please focus on Theory section of each and every chapter, to get in-depth understading of concepts and basic applications for NEET / AIIMS.</string>
+    <string name="msg_free_trial_1_3_4">Please focus on Theory section of each and every chapter, to get in-depth understading of concepts and basic applications for NEET / AIIMS.</string>
+    <string name="msg_free_trial_1_4_1">Please focus on Theory section of each and every chapter, to get in-depth understading of concepts and basic applications for Boards.</string>
+    <string name="msg_free_trial_1_4_2">Please focus on Theory section of each and every chapter, to get in-depth understading of concepts and basic applications for Boards.</string>
+    <string name="msg_free_trial_1_4_3">Please focus on Theory section of each and every chapter, to get in-depth understading of concepts and basic applications for Boards.</string>
+    <string name="msg_free_trial_1_4_4">Please focus on Theory section of each and every chapter, to get in-depth understading of concepts and basic applications for Boards.</string>
+    <string name="msg_free_trial_2">Visual Physics can help students learn better with ample visualisation, practice selected solved problems and discuss their doubts with subject experts.</string>
+    <string name="msg_free_trial_3">Visual Physics can help you learn &amp; teach better with ample visualisation, which we strive to provide as a teacher.</string>
+    <string name="msg_free_trial_4">Visual Physics can help you learn the basic as well as advanced level physics easily with powerful visualisation.</string>
+
+    <string name="msg_personalization_unable">Unable to personalize. Please try later.</string>
+    <string name="msg_license_not_acquired_network_error">License not acquired due to network error. Please check your internet connection and try again.</string>
+    <string name="msg_license_not_acquired">License not acquired. Please report the issue.</string>
+    <string name="msg_details_needed">Details needed for personalisation</string>
+
+    <!-- Error String -->
+    <string name="error_invalid_email">Email is invalid.</string>
+    <string name="error_invalid_password">Password is too short.</string>
+    <string name="error_incorrect_password">Password is incorrect.</string>
+    <string name="error_incorrect_email">Email is incorrect.</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email completions."</string>
+    <string name="error_device_id_not_found">Not able to fetch device info. Please try later.</string>
+    <string name="Error_Msg_Network_Connection">No Internet Connection Found!! Please Try Later on with Internet Connection.</string>
+    <string name="Error_Msg_Try_Later">Please try later.</string>
+    <string name="Error_Video_Already_Downloaded">Video already downloaded.</string>
+    <string name="Error_Chapter_Delete">Unable to delete whole chapter. Please try later.</string>
+
+    <!--License-->
+    <string name="Error_Acquiring_License_Without_Internet">Please connect to Internet to acquire license.</string>
+
+    <string name="PYZE_APP_KEY">Q3CNeDR5RXqzQB_dtFV1fw</string>
+
+    <!-- For Indian Form -->
+
+    <!-- IZISS to update texts for headers for QuestionnaireFragment1 and QuestionnaireFragment2 and FreeTrialFragment-->
+    <string name="personalisation_details">Personalisation Details</string>
+    <string name="welcome">Welcome</string>
+
+    <!-- IZISS to update texts for QuestionnaireFragment1 -->
+    <string name="question_first">You are a</string>
+    <string name="option_1_1">Student</string>
+    <string name="option_1_2">Parent</string>
+    <string name="option_1_3">Teacher</string>
+    <string name="option_other">Others</string>
+    <string name="option_other_desc">Description</string>
+
+    <!-- IZISS to update texts for QuestionnaireFragment2 -->
+    <string name="question_second">Exam preparing for</string>
+    <string name="option_2_1">JEE Main</string>
+    <string name="option_2_2">JEE Main &amp; Advanced</string>
+    <string name="option_2_3">NEET / AIIMS</string>
+    <string name="option_2_4">Boards</string>
+
+    <string name="question_third">Target Year ?</string>
+    <string name="option_3_1">2020</string>
+    <string name="option_3_2">2021</string>
+    <string name="option_3_3">2022</string>
+    <string name="option_3_4">2023</string>
+
+    <string name="submit">Submit</string>
+
+    <!-- IZISS to update texts for FreeTrialFragment -->
+    <string name="msg_free_trial_help">Once free trial expires, You will need to purchase any one of the flexible subscription plans from Buy menu.</string>
+    <!-- Added to show different message on FreeTrial -->
+    <string name="msg_free_trial_taken">The free trial has been taken on this device. You will need to purchase a subscription plan from \'Buy\' menu.</string>
+    <string name="got_it">GOT IT.</string>
+    <string name="text_below_got_it">Your free trial of 7 days has started.</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="please_choose_an_option">Please choose an option</string>
+
+    <string name="no_apps_to_handle_intent">No app is installed to handle this action.</string>
+    <string name="taking_too_much_time">Taking too much time to load. Please download it first and then play it.</string>
+
+    <!-- Buy Text-->
+    <string name="inr">INR</string>
+    <string name="dollar">USD</string>
+
+    <!-- Payment Options -->
+    <string name="available_payment_options">Available Payment Options</string>
+
+    <string name="credit_card">Credit Card</string>
+    <string name="debit_card">Debit Card</string>
+    <string name="net_banking">Net Banking</string>
+    <string name="paytm_wallet">Paytm Wallet</string>
+    <string name="proceed_to_pay">Proceed to Pay</string>
+
+    <string name="paypal">PayPal</string>
+    <string name="pay_with_paypal">Pay with PayPal</string>
+
+    <!-- Guide Texts -->
+
+    <!-- Chapter Listing Screen -->
+    <string name="guide_tap_to_open">Tap to open menu</string>
+    <string name="guide_download_chapter">Download/Delete complete chapter to watch offline</string>
+    <string name="guide_watch_full_chapter">Study one full chapter to understand the potential of this course</string>
+    <string name="guide_got_it">GOT IT.</string>
+
+    <!-- Video Listing Screen -->
+    <string name="guide_search_videos">Search videos with keywords</string>
+    <string name="guide_concepts_and_basic_questions">Concepts &amp; Basic Questions</string>
+    <string name="guide_intermediate_and_advanced_options">Intermediate &amp; Advanced Questions</string>
+    <string name="guide_download_video">Download/Delete individual videos\n( icon of downloaded video is blue )</string>
+
+    <!-- Video Screen -->
+    <string name="guide_share">Share</string>
+    <string name="guide_double_tap">Double tap for 5 sec. forward/back</string>
+    <string name="guide_play_pause">Play/Pause</string>
+    <string name="guide_next">Next</string>
+    <string name="guide_change_playback_speed">Change Playback Speed</string>
+    <string name="guide_full_screen">Full Screen</string>
+
+    <string name="txt_otp_will_sent">An OTP will be sent to verify your email</string>
+    <string name="txt_please_provide_email">Please provide your email, as it is not available via Facebook login.</string>
+    <string name="msg_direct_login_with_google">Your email is not available via Facebook login, so please use Direct Login with Google.</string>
+    <string name="asset_statements" translatable="false">[{\n  \"relation\": [\"delegate_permission/common.handle_all_urls\"],\n  \"target\": {\n    \"namespace\": \"web\",\n    \"site\": \"https://www.visualphysics.nlytn.in\",\n  }\n}]</string>
+    <string name="share_app">share app</string>
+    <string name="share_desc">with your friends and family</string>
+    <string name="connect">Connect</string>
+    <string name="connect_desc"><![CDATA[to keep in touch & get courses updates]]></string>
+    <string name="whatsapp_not_install">Whatsapp application is not install in the device.</string>
+    <string name="youtube_post_error">Not able to subscribe youtube channel now. Try later.</string>
+    <string name="twitter_follow_error">Not able to follow on twitter now. Try Later.</string>
+    <string name="progress_bar_message">Please wait...</string>
+    <string name="facebook">Facebook</string>
+    <string name="no_result_found">No result found.</string>
+    <string name="upcoming_video">We don’t have videos for this topic at present. \nWe are working on these missing topics, \nand they will be available in some time.</string>
+    <string name="visual_physics">Visual Physics</string>
+</resources>

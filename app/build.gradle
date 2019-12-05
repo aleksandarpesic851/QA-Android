@@ -1,0 +1,198 @@
+apply plugin: 'com.android.application'
+apply plugin: 'io.fabric'
+
+android {
+    compileSdkVersion 28
+    buildToolsVersion '28.0.3'
+    dexOptions {
+        javaMaxHeapSize "4g"
+    }
+    defaultConfig {
+        applicationId "com.visualphysics"
+        minSdkVersion 19
+        targetSdkVersion 28
+        versionCode 14
+        versionName "1.0.1"
+        multiDexEnabled true
+    }
+    compileOptions {
+        sourceCompatibility '1.8'
+        targetCompatibility '1.8'
+    }
+
+    /* signingConfigs {
+        release {
+            storeFile file("/home/iziss/Desktop/test_keystore_vp.jks")
+            storePassword "visualphysics"
+            keyAlias "test_alias"
+            keyPassword "visualphysics"
+        }
+    }*/
+
+    configurations.all {
+        resolutionStrategy.eachDependency { DependencyResolveDetails details ->
+            def requested = details.requested
+            if (requested.group == 'com.android.support') {
+                if (!requested.name.startsWith("multidex")) {
+                    details.useVersion '28.0.0'
+                }
+            }
+        }
+        resolutionStrategy.force 'com.google.android.gms:play-services-location:16.0.0'
+        resolutionStrategy.force 'com.google.android.gms:play-services-maps:16.1.0'
+        resolutionStrategy.force 'com.google.android.gms:play-services-basement:16.2.0'
+        exclude group: 'com.android.support', module: 'support-v4'
+
+
+    }
+
+    buildTypes {
+        debug {
+            minifyEnabled false//minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+
+        }
+        release {
+
+            //signingConfig signingConfigs.release
+            minifyEnabled true//minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+
+        }
+    }
+
+    splits {
+        // Configures multiple APKs based on ABI.
+        abi {
+
+            // Enables building multiple APKs per ABI.
+            enable true
+
+            // By default all ABIs are included, so use reset() and include
+            // to specify that we only want APKs for x86, armeabi-v7a, and mips.
+
+            // Resets the list of ABIs that Gradle should create APKs for to none.
+            reset()
+
+            // Specifies a list of ABIs that Gradle should create APKs for.
+            include "armeabi-v7a", "arm64-v8a", "x86", "x86_64"
+
+            // Specifies that we do not want to generate a universal APK
+            // that includes all ABIs.
+            universalApk false
+        }
+    }
+    lintOptions {
+        checkReleaseBuilds false
+    }
+
+}
+
+ext.abiCodes = ['armeabi-v7a': 1, 'arm64-v8a': 2, 'x86': 3, 'x86_64': 4]
+
+import com.android.build.OutputFile
+
+android.applicationVariants.all { variant ->
+
+    variant.outputs.each { output ->
+
+        def baseAbiVersionCode =
+
+                project.ext.abiCodes.get(output.getFilter(OutputFile.ABI))
+
+        if (baseAbiVersionCode != null) {
+            output.versionCodeOverride =
+                    baseAbiVersionCode * 1000 + variant.versionCode
+        }
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation fileTree(include: ['.jar', '.so'], dir: 'libs')
+    testImplementation 'junit:junit:4.12'
+
+    /*Android support libraries */
+    implementation('com.android.support:appcompat-v7:28.0.0') {
+        force = true
+    }
+    implementation('com.android.support:design:28.0.0') {
+        force = true
+    }
+    implementation('com.android.support:cardview-v7:28.0.0') {
+        force = true
+    }
+    implementation('com.android.support:recyclerview-v7:28.0.0') {
+        force = true
+    }
+
+    /*Jar file dependencies */
+    implementation files('libs/volley.jar')
+    implementation files('libs/PGSDK_v1.0.jar')
+    implementation files('libs/wasabi.jar')
+
+    /*implementation(project(path: ':ActiveAndroid')) {
+        transitive = true
+        exclude group: 'com.android.support', module: 'support-v4'
+    }*/
+
+    /* Removed the module dependency of active android and include this dependency for Database*/
+    implementation('com.michaelpardo:activeandroid:3.1.0-SNAPSHOT') {
+                transitive = true
+                exclude group: 'com.android.support', module: 'support-v4'
+            }
+
+    /* Dependencies for Google libraries*/
+    implementation 'com.google.android.gms:play-services-auth:16.0.1'
+    implementation 'com.google.android.gms:play-services-identity:16.0.0'
+    implementation 'com.google.android.gms:play-services-plus:16.0.0'
+    implementation 'com.google.code.gson:gson:2.8.5'
+    implementation('com.google.android.gms:play-services-basement:16.2.0') {
+        force = true
+        exclude group: "com.google.android.gms"
+    }
+
+
+    /* Dependency for Facebook*/
+    implementation 'com.facebook.android:facebook-android-sdk:5.5.1'
+
+    /* Dependencies for Exomedia Player*/
+    implementation 'com.devbrackets.android:exomedia:4.3.0'
+    implementation 'com.google.android.exoplayer:exoplayer:2.8.2'
+
+    /* Dependency for Multidex */
+    implementation 'com.android.support:multidex:1.0.3'
+
+    /* Dependency to show images on view via Picasso library*/
+    implementation 'com.squareup.picasso:picasso:2.71828'
+
+    /* Dependency for Firebase utilities*/
+    implementation 'com.google.firebase:firebase-core:16.0.9'
+    implementation 'com.google.firebase:firebase-messaging:18.0.0'
+    implementation 'com.google.firebase:firebase-crash:16.2.1'
+    implementation 'com.google.firebase:firebase-appindexing:18.0.0'
+    implementation 'com.google.firebase:firebase-invites:17.0.0'
+
+    /* Dependency for crashlytics */
+    implementation('com.crashlytics.sdk.android:crashlytics:2.10.1@aar') {
+        transitive = true
+    }
+
+    /* Dependency for pyze library which is handling events*/
+    implementation 'com.pyze:PyzeLibrary:4.7.3'
+
+    /* Dependency for Mixpanel library to update events, push notifications and in-app notifications*/
+    implementation 'com.mixpanel.android:mixpanel-android:5.6.3'
+
+    /* Dependency for Zoho chat util*/
+    implementation 'com.zoho.salesiq:mobilisten:1.4'
+
+    /* Dependency for branch to manage credits points*/
+    implementation 'io.branch.sdk.android:library:3.+'
+}
+
+apply plugin: 'com.google.gms.google-services'
+

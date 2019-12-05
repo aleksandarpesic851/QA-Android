@@ -1,0 +1,56 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="20dp"
+    android:layout_marginLeft="@dimen/login_margin"
+    android:layout_marginRight="@dimen/login_margin"
+    android:layout_marginTop="20dp"
+    android:orientation="vertical">
+
+    <UIControl.CustomTextViewRegular
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="Please enter the one time password sent to your email"
+        android:textSize="@dimen/text_size" />
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <UIControl.CustomEditTextView
+            android:id="@+id/edt_OTPScreenOTP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="OTP Number"
+            android:inputType="numberDecimal"
+            android:maxLength="7"
+            android:maxLines="1"
+            android:textSize="@dimen/text_size" />
+    </android.support.design.widget.TextInputLayout>
+
+
+    <UIControl.CustomButton
+        android:id="@+id/btnRegenrateOTPScreenSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginTop="15dp"
+        android:background="@android:color/transparent"
+        android:minHeight="0dp"
+        android:text="Resend" />
+
+    <UIControl.CustomButton
+        android:id="@+id/btn_OTPScreenSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/custom_button_bg"
+        android:backgroundTint="@color/colorPrimary"
+        android:text="SUBMIT"
+        android:textColor="@drawable/custom_button_text_bg" />
+
+
+</LinearLayout>
+
